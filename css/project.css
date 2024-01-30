@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(128, 0, 128, 0.671);
+}
+
+.container h2{
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    padding: 50px 0;
+}
+
+.price-row{
+    width: 90%;
+    max-width: 1100px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.price-col{
+    background-color: rgba(128, 0, 128, 0.949);
+    /**percentage mean its a percentage of the parent, i.e 10% 
+    of the 90% width**/
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.price-col p{
+    font-size: 40px;
+}
+
+.price-col h3{
+    font-size: 30px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+}
+
+.price-col h3 span{
+    font-size: 20px;
+}
+li span{
+    position: relative;
+    left: -70px;
+}
+
+.price-col ul{
+    text-align: left;
+    margin: 20px 0;
+    color: white;
+}
+
+.price-col ul li{
+    margin: 15px 0;
+}
+
+.price-col button{
+    background: transparent;
+    padding: 14px 0;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid red;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background color 1s;
+}
+
+.price-col button:hover{
+    background-color: greenyellow;
+}
+.price-col ul {
+    list-style: none;
+  }
+  
+.price-col ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
